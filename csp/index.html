@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eight-week Community Service Project on air pollution in Nellore by Sree Venkateswara College.">
+  <title>Air Pollution | SVCN CSP Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sticky navigation -->
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">SVCN</span><span>Air Pollution <small>Community Service Project</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#journey">8-Week Journey</a>
+      <a href="#survey">Survey</a><a href="#team">Team</a><a href="#gallery">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: edit college/team details in script.js CONFIG -->
+    <section class="hero" id="home">
+      <div class="skyline" aria-hidden="true">
+        <div class="factory factory-one"><span></span><span></span><span></span></div>
+        <div class="factory factory-two"><span></span><span></span></div>
+        <div class="cityline"></div>
+      </div>
+      <div class="smoke smoke-one"></div><div class="smoke smoke-two"></div><div class="smoke smoke-three"></div>
+      <div class="hero-inner">
+        <div class="college-lockup">
+          <div></div>
+   
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyogBD16cftVf14C0JCUfO5VMdUaZugflART0ThjmyuobspPc1kZV33vU&s=10"
+     alt="SVCN College Logo"
+     class="college-logo">
+
+
+          <div><strong id="collegeNameHero">SREE VENKATESWARA COLLEGE (SVCN)</strong><small>Community Service Project</small></div></div>
+        <p class="eyebrow">UNDERSTANDING OUR ENVIRONMENT · NELLORE</p>
+        <h1>CSP <span>Project</span></h1>
+        <h2>Air Pollution</h2>
+        <p class="hero-copy">Cleaner air begins with awareness, informed choices, and action from every community.</p>
+        <p class="hero-meta" id="heroTeam">Team members · Guide / Instructor</p>
+        <a class="button button-primary" href="#journey">Explore Our 8-Week Journey <span>↓</span></a>
+      </div>
+      <div class="hero-bottom"><span>OBSERVE</span><i></i><span>UNDERSTAND</span><i></i><span>ACT FOR CLEAN AIR</span></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">THE ISSUE AROUND US</p><h2>What is <span>air pollution?</span></h2><p>Air pollution happens when harmful substances such as smoke, dust, and gases enter the air and affect people and the environment.</p></div>
+      <div class="info-grid">
+        <article class="info-card reveal"><div class="icon-circle">⌁</div><h3>Common causes</h3><p>Vehicle exhaust, road and construction dust, burning waste, industrial emissions, and the use of certain fuels can reduce local air quality.</p></article>
+        <article class="info-card reveal"><div class="icon-circle">♡</div><h3>Possible effects</h3><p>Polluted air can irritate the eyes and throat, worsen breathing problems, affect heart and lung health, and harm plants and ecosystems.</p></article>
+        <article class="info-card reveal"><div class="icon-circle">✳</div><h3>How we can help</h3><p>Use public transport when possible, maintain vehicles, avoid burning waste, save energy, plant and protect trees, and report persistent pollution sources.</p></article>
+      </div>
+      <div class="stats-grid reveal" id="statsGrid">
+        <div class="stat"><strong data-count="8">0</strong><span>weeks of fieldwork</span></div>
+        <div class="stat"><strong data-count="4">0</strong><span>student team members</span></div>
+        <div class="stat"><strong data-count="0">0</strong><span>survey responses <small>(update after survey)</small></span></div>
+        <div class="stat"><strong data-count="0">0</strong><span>awareness activities <small>(update after activity)</small></span></div>
+      </div>
+      <p class="data-note">Project progress counters are editable placeholders, not air-quality measurements. Add verified local figures and cite their sources before presenting them as statistics.</p>
+    </section>
+
+    <section class="section journey-section" id="journey">
+      <div class="section-heading reveal"><p class="eyebrow">FROM PLANNING TO ACTION</p><h2>Our 8-week <span>journey</span></h2><p>Each week takes us one step closer to understanding air pollution in our town, Nellore.</p></div>
+      <div class="timeline">
+        <div class="timeline-track"><div class="timeline-progress" id="timelineProgress"></div></div>
+        <div id="timelineItems"></div>
+      </div>
+    </section>
+
+    <section class="section survey-section" id="survey">
+      <div class="section-heading reveal"><p class="eyebrow">LISTENING TO OUR COMMUNITY</p><h2>Survey <span>results</span></h2><p>The charts below contain sample values to demonstrate the layout. Replace them with your team's actual survey findings.</p></div>
+      <div class="survey-grid">
+        <article class="chart-card reveal"><div class="chart-title"><div><h3>Perceived major sources</h3><p>Sample responses · replace with actual data</p></div><span class="chart-tag">SAMPLE</span></div><canvas id="sourcesChart" aria-label="Bar chart of sample perceived pollution sources"></canvas></article>
+        <article class="chart-card reveal"><div class="chart-title"><div><h3>Awareness of prevention</h3><p>Sample responses · replace with actual data</p></div><span class="chart-tag">SAMPLE</span></div><canvas id="awarenessChart" aria-label="Doughnut chart of sample awareness responses"></canvas></article>
+      </div>
+      <p class="data-note">Do not report sample values as findings. Record the number of people surveyed, survey dates, area, and method alongside your final charts.</p>
+    </section>
+
+    <section class="section team-section" id="team">
+      <div class="section-heading reveal"><p class="eyebrow">THE PEOPLE BEHIND THE PROJECT</p><h2>Meet our <span>team</span></h2><p>A collaborative effort to learn from the community and encourage cleaner air.</p></div>
+      <div class="team-grid" id="teamGrid"></div>
+      <div class="guide-note reveal"><strong>Project guide</strong><span id="guideName">Instructor name</span></div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading reveal"><p class="eyebrow">MOMENTS FROM THE FIELD</p><h2>Project <span>gallery</span></h2><p>A glimpse into our journey of understanding air pollution, conducting field surveys, engaging with local communities, and spreading awareness about the importance of clean air and a healthy environment.</p></div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <section class="callout reveal"><div><p class="eyebrow">SMALL STEPS. SHARED RESPONSIBILITY.</p><h2>Let’s make clean air a community priority.</h2><p>Awareness is the first step. Consistent action helps create healthier neighbourhoods.</p></div><a class="button button-light" href="#home">Back to top ↑</a></section>
+  </main>
+
+  <footer><div><strong id="footerCollege">SREE VENKATESWARA COLLEGE (SVCN)</strong><p>Community Service Project · Air Pollution in Nellore</p></div><p id="footerYear">Project year · 2026</p><p class="acknowledgement">Acknowledgement: We thank our college, project guide, local officials, and community members for their guidance and cooperation.</p></footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Gallery image viewer"><button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button><img id="lightboxImage" src="" alt=""><p id="lightboxCaption"></p></div>
+  <script src="script.js"></script>
+</body>
+</html>
